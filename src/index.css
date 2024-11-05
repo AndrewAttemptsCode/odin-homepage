@@ -160,3 +160,62 @@ body {
   gap: 5px;
 }
 
+/* Footer */
+
+.footer {
+  background: linear-gradient(#2b75d6 5%, #6fbffc);
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  gap: 200px;
+}
+
+.footer-img-wrapper {
+  overflow: hidden;
+  width: min(100%, 600px);
+}
+
+.contact-info {
+  max-width: 50%;
+  color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.contact-info h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-methods .telephone,
+.contact-methods .email {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-methods img {
+  width: 25px;
+  height: 25px;
+  filter: brightness(93%) saturate(0%);
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-icons img {
+  width: 30px;
+  height: 30px;
+}
