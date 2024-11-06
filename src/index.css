@@ -31,6 +31,7 @@ body {
 }
 
 .header-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,10 +169,11 @@ body {
 
 .footer-wrapper {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 50px;
-  gap: 200px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 50px;
+  max-width: calc(3 * 400px + 2 * 40px);
+  margin: auto;
 }
 
 .footer-img-wrapper {
@@ -245,3 +247,31 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   }
 }
+
+@media (min-width: 768px) and (max-width: 1109px) {
+  .project-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  }
+
+  .footer-wrapper {
+    padding: 50px;
+  }
+
+  .header-wrapper {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+
+  .profile-img-wrapper {
+    float: left;
+    margin-right: 15px;
+    width: 350px;
+  }
+
+  .about-me {
+    margin-top: 300px;
+    margin-left: 95px;
+  }
+}
+
