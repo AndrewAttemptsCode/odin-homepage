@@ -207,7 +207,6 @@ body {
 .contact-methods img {
   width: 25px;
   height: 25px;
-  filter: brightness(93%) saturate(0%);
 }
 
 .footer-social-icons {
@@ -218,4 +217,31 @@ body {
 .footer-social-icons img {
   width: 30px;
   height: 30px;
+}
+
+/* Media Queries */
+
+@media (max-width: 767px) {
+  .header-wrapper {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .main-wrapper {
+    padding: 20px;
+  }
+
+  .contact-info {
+    max-width: 100%;
+  }
+
+  .project-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  }
 }
